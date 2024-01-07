@@ -1,8 +1,8 @@
 <?php
 
 $EmailFrom = "feedback@clpo.net";
-$EmailTo = "clement.pommerie@gmail.com";
-$Subject = "Feedback & Infos";
+$EmailTo = "jessen.brett@gmail.com";
+$Subject = "Feedback & Information";
 $Name = Trim(stripslashes($_POST['Name'])); 
 $Tel = Trim(stripslashes($_POST['City'])); 
 $Email = Trim(stripslashes($_POST['Email'])); 
@@ -36,7 +36,7 @@ $success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
 // redirect to success page 
 if ($success){
     echo "<script language='javascript'>";
-    echo 'alert("Thanks for your Feedback !");';
+    echo 'alert("Thanks for visiting!");';
     echo 'window.location.href = "https://x.clpo.net"';
     echo "</script>";
 }
