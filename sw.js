@@ -1,4 +1,4 @@
-let version = '0.4';
+let version = '0.1';
 console.log(`BETA version ${version} loaded`);
 
 
